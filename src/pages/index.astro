@@ -1,19 +1,18 @@
 ---
 import Layout from '../components/Layout.astro';
-import FeedbackForm from '../components/FeedbackForm.astro';
 ---
 
-<Layout title="Astro Toolbox">
+<Layout title="Architekturbüro Nawrat">
   <main>
-    <div class="header">
+    <!-- <div class="header">
       <div class="logo">
         <img
           src="https://user-images.githubusercontent.com/43764894/223557634-f62606c5-bdf9-476c-9264-0d3728189962.png"
           alt="Netlify and Astro.js logos"
         />
       </div>
-    </div>
-    <div class="intro">
+    </div> -->
+    <!-- <div class="intro">
       <p>
         Hi 👋! This template gives you an
         <a href="https://astro.build/">Astro</a> app with the scaffolding for
@@ -31,11 +30,72 @@ import FeedbackForm from '../components/FeedbackForm.astro';
           >https://github.com/netlify-templates/astro-toolbox</a
         >! Happy coding!
       </p>
-    </div>
-    <FeedbackForm />
-    <a class="jokes-link" href="/api/joke">
-      <h3>Click here for function-loaded jokes!</h3>
-    </a>
+    </div> -->
+
+      <img class="header-image" id="home" src="img/deckblatt.jpg">
+      <div class="container">
+          <a class="menu-link" href="#home">Home</a>
+          <a class="menu-link" href="#anfahrt">Anfahrt</a>
+          <a class="menu-link" href="#referenzen">Referenzen</a>
+          <a class="menu-link" href="#kontakt">Kontakt</a>
+          <a class="menu-link" href="#impressum">Impressum</a>
+          <a class="menu-link" href="#geschichte">Geschichte</a>
+          <a class="menu-link button" href="">Anrufen</a>
+      </div>
+
+
+      <h1 class="headline" >Architektur <p> Nawrat & Sohn</h1></p>
+
+      <div class="slogan">BERATUNG / PLANUNG / BAULEITUNG / 3D-VISUALISIERUNG </div>
+  
+  <h2 id="anfahrt" >Anfahrt</h2> 
+  
+  <div class="description-section"> 
+          <div class="half-width"> So gelangen Sie zu uns. Mit der Straßenbahn bis zur Haltestelle Aegidientorplatz und von da aus nur 5min zu Fuß die Marienstrße runter. Vor dem Büro sind entsprechende Parkplätze vorhanden, welche Gebührenpflichtig sind. Das Büro befindet sich im 8. OG.
+          </div> 
+          <iframe class="half-width" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2436.068381116396!2d9.742817077243865!3d52.36918007202197!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b074b4671fc403%3A0x200dfbe79f4c6fc9!2sMarienstra%C3%9Fe%209%2C%2030171%20Hannover!5e0!3m2!1sde!2sde!4v1717601429228!5m2!1sde!2sde" width= "600" height="400" style="border:0;" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+  
+      <div class="scroll-container">
+          <img src="img/Nordansicht Blome-001.jpg">
+          <img src="img/Ostansicht-001.jpg">
+          <img src="img/Südansicht Blome-001.jpg">
+          <img src="img/Blome V2-GRUNDRISS EG 1-001.jpg">
+          <img src="img/Blome V2-GRUNDRISS DG 1-001.jpg">
+      </div>
+  
+  <h3 id="referenzen" >Referenzen</h3>
+  
+  <div class="menu-background"></div> 
+  
+  <h4 id="kontakt" >Kontakt</h4>
+  <div class="kontakt">
+      <div class="half-width-kontakt"> Architektur Nawrat & Sohn
+          <p>Marienstrasse 9-11</p>
+          <p>30171 Hannover</p>
+          <br>
+           <p>Tel: +49 511 34088350</p>
+           <p>E-Mail: info@architektur-nawrat.de</p></div>
+           <div class="half-width-kontakt"> <img src="img/Michael Nawrat Profile-pic.jpg" width= "600" height="400" style="border:0;">
+      </div> 
+  
+   
+  
+  <h5 id="impressum" >Impressum</h5>
+  
+  <div class="impressum"> Copyright usw 
+      <p>Designed by Oliver-Oskar Nawrat</p> </div> 
+      </div>
+      
+  <h6 id="geschichte" >Geschichte</h6>
+  
+  <div class="geschichte"> So sah die Website seit 2010 aus. Nun wurde sie erneuert. 
+      <p><a href="https://architektur-nawrat.de/" target="_blank">Hier kommen Sie zur alten Website</a> </p>
+  
+      
+  
+  </div> 
+
   </main>
 </Layout>
 
@@ -67,4 +127,255 @@ import FeedbackForm from '../components/FeedbackForm.astro';
   footer img {
     width: 20px;
   }
+
+
+  /*Oli Code*/
+
+  body {
+            margin: 0% ;
+        
+         font-family: "Montserrat", sans-serif;
+         background-color: #c8d8e7c2;
+         font-optical-sizing: auto;
+         font-weight: <weight>;
+         font-style: normal; 
+        }
+
+        .header-image {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            filter: brightness(0.5);
+
+        }
+
+        .Profilbild {
+            
+            position: absolute;
+            border-radius: 100%;
+            width: 15%;
+            height: auto;
+            object-fit: 100%; 
+            filter: brightness(0.9);
+        }
+
+        .container {
+            position:fixed;
+            overflow: visible;
+            z-index: 1000;
+            right: 32px;
+            top: 10px; 
+            font-size: 24px;
+            display: flex;
+        }
+
+        .menu-link {
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+            margin-left: 16px;
+
+        }
+
+        .menu-link:hover {
+            text-decoration: underline;
+        }
+
+        .headline {
+            position: absolute;
+            right: 100px;
+            top: 300px;
+            color: white;
+            font-size: 70px;
+            font-weight: 600;
+            width: 800px;
+            line-height: 0.35;
+            text-shadow: 10px 10px 5px rgba(0, 0, 0, 1.4) 
+        }
+
+        .slogan {
+            position: absolute;
+            top: 550px;
+            right: 400px;
+            color: white;
+        }
+
+        .description-section {
+            position: absolute;
+            height: 450px;
+            top: 1150px;
+            padding: 35px 100px;
+            color: black;
+            font-size: 30px;
+            display: flex;
+            gap: 200px;
+        }
+
+        .kontakt {
+            position: absolute;
+            height: 1050px;
+            top: 2550px;
+            padding: 35px 100px;
+            color: black;
+            font-size: 30px;
+            display: flex;
+            gap: 60px;
+            z-index: 0;
+        }
+
+        .button {
+            background-color: orange;
+            padding: 4px;
+            color: black;
+            border-radius: 8px;
+            box-shadow: 5px 5px 5px;
+        }
+
+        .half-width {
+            width: 50%;
+        }
+
+        h2{
+            position: absolute;
+            text-align: center;
+            font-size: 45px;
+            top: 1000px;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            
+        }
+
+        @media (max-width: 1000px ) {
+            .half-width-konakt {
+            flex-direction: column;
+            align-items: center;
+            height: unset;
+        }
+
+        .half-width-kontakt{
+            width: unset;
+        }
+        }
+
+        @media (max-width: 1000px) {
+            .description-section {
+                flex-direction: column;
+                align-items: center;
+                height: unset;
+            }
+
+            .half-width {
+                width: unset;
+            }
+        }
+
+        .scroll-container {
+
+            background-color: #333;
+            position: absolute; 
+            width: 100%;
+            height: auto;
+            top: 1800px;
+            white-space: nowrap;
+            overflow-x: auto;
+            overflow-y: hidden;
+
+        }
+
+        .scroll-container img {
+            width: 400px;
+            height: auto;
+            margin: 20px;
+        }
+
+        h3 {
+            font-size: 46px; 
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        
+            top: 1650px;
+        }
+
+        h4 {
+            font-size: 46px; 
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            top: 2200px;
+        }
+
+        h5 {
+            font-size: 46px; 
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            top: 600px;
+        }
+
+        h6 {
+
+            font-size: 46px; 
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            top: 3600px;
+        }
+
+        .impressum {
+            font-size: 16px; 
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            top: 800px;
+        }
+
+        .menu-background {
+            position: fixed;
+            top: 0px;
+            width: 100%;
+            background-color: rgba(51, 51, 51, 0.7);
+            height: 50px;
+            z-index: 0;
+
+        }
+
+        .geschichte {
+
+            font-size: 16px; 
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            top: 3800px; 
+        }
+
+        @media (max-width: 700px) {
+            .half-width-kontakt {
+                flex-direction: column;
+                align-items: center;
+                height: unset;
+                gap: 1000px;
+            }
+
+            .half-width {
+                width: unset;
+            }
+        }
+
+        @media (max-width: 930px ) {
+
+            .container {
+                display: none;
+            }
+        }
+
+        @media (max-width 1400px) {
+
+            .headline {
+                width: calc(100vw * 0.4);
+                flex-direction: column;
+                align-self: auto;
+                height: calc(56.25vww * 0.4);
+            }
+        }
 </style>
